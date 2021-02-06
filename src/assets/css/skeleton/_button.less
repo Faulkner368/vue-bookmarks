@@ -1,0 +1,16 @@
+.mainbutton{
+  background: @black;
+  padding: 9px 12px 10px;
+  margin-right: 5px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  color: @white;
+  &:hover{
+    background: lighten(@grey, 5%);
+  }
+}
+
+.btn, .button, button, input[type="button"]{
+  .mainbutton();
+}

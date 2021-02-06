@@ -1,0 +1,92 @@
+@titlefont: 'Oswald', sans-serif;
+@mainfont: 'Lato', sans-serif;
+
+@fontweight_normal: 400;
+@fontweight_medium: 500;
+@fontweight_bold: 700;
+
+.h1 {
+  font-size: 36px;
+  font-family: @titlefont;
+  font-weight: @fontweight_medium;
+  color: @black;
+  line-height: 1.2em;
+  letter-spacing: 0.025em;
+  @media (max-width: @desktop){
+    font-size: 30px;
+  }
+  @media (max-width: @ipadlandscape){
+    font-size: 22px;
+  }
+}
+
+.h2 {
+  font-size: 26px;
+  font-family: @titlefont;
+  font-weight: @fontweight_medium;
+  color: @black;
+  line-height: 1.2em;
+  letter-spacing: 0.025em;
+  @media (max-width: @desktop){
+    font-size: 24px;
+  }
+  @media (max-width: @ipadlandscape){
+    font-size: 22px;
+  }
+}
+
+.h3 {
+  font-size: 22px;
+  font-family: @titlefont;
+  font-weight: @fontweight_medium;
+  color: @black;
+  line-height: 1.2em;
+  letter-spacing: 0.025em;
+}
+
+.supportingtext{
+  font-size: 20px;
+  font-family: @titlefont;
+  font-weight: @fontweight_medium;
+  color: @black;
+  line-height: 1.2em;
+  letter-spacing: 0.05em;
+  @media (max-width: @ipadlandscape){
+    font-size: 18px;
+  }
+}
+
+.maintext {
+  font-size: 18px;
+  font-family: @mainfont;
+  font-weight: @fontweight_normal;
+  color: @black;
+  line-height: 1.2em;
+  letter-spacing: 0.01em;
+  @media (max-width: @ipadlandscape){
+    font-size: 15px;
+  }
+}
+
+.tinytext {
+  font-size: 15px;
+  font-family: @mainfont;
+  font-weight: @fontweight_normal;
+  color: @black;
+  line-height: 1.2em;
+  letter-spacing: 0.01em;
+}
+
+h1{
+  .h1();
+}
+h2{
+  .h2();
+}
+h3{
+  .h3();
+}
+
+p,a,li,span{
+  .maintext();
+}
